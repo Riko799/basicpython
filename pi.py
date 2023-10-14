@@ -5,3 +5,10 @@ text = """
 
 # TODO
 
+words = text.replace(",", "").split()
+word_lengths = [str(len(word)) for word in words]
+result_string = ''.join(word_lengths)
+
+print(result_string)
+
+
